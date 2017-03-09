@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo -e "\x1B[92mAdding new changes to git...\x1B[0m" && git add .
+echo -e "\x1B[92mCommit...\x1B[0m" && git commit -m'$1'
+echo -e "\x1B[92mPushing to Heroku...\x1B[0m" && git push heroku master
+echo -e "\x1B[92mStopping old web process...\x1B[0m" && heroku ps:stop web.1
+echo -e "\x1B[92mStarting new process...\x1B[0m" && heroku run:detached app
+echo -e "\x1B[92mDone!\x1B[0m"
+

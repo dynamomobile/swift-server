@@ -17,6 +17,10 @@ drop.get { req in
     ])
 }
 
+drop.get("favicon.ico") { req in
+    return try drop.view.make("image/dynamo_logo.png")
+}
+
 // ANIMATION
 drop.get("animation") { request in
     return try drop.view.make("dynamo.html")

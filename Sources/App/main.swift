@@ -18,8 +18,24 @@ drop.get { req in
 }
 
 drop.get("favicon.ico") { req in
-    return try drop.view.make("image/dynamo_logo.png")
+    return try drop.view.make("image/favicon.ico")
 }
+drop.get("apple-touch-icon-precomposed.png") { req in
+    return try drop.view.make("image/favicon/apple-touch-icon-precomposed.png")
+}
+drop.get("apple-touch-icon.png") { req in
+    return try drop.view.make("image/favicon/apple-touch-icon.png")
+}
+drop.get("apple-icon-180x180.png") { req in
+    return try drop.view.make("/images/favicon/apple-icon-180x180.png")
+}
+drop.get("apple-icon-152x152.png") { req in
+    return try drop.view.make("images/favicon/apple-icon-152x152.png")
+}
+drop.get("apple-icon-144x144.png") { req in
+    return try drop.view.make("images/favicon/apple-icon-144x144.png")
+}
+
 
 // ANIMATION
 drop.get("animation") { request in

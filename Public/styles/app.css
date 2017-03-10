@@ -21,15 +21,23 @@ body {
     float: left;
 }
 
+.logo {
+    position: relative;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 .message {
 	position: absolute;
-	width: 1010px;
     height: 64px;
-	text-align: center;
-	top: 40%;
-	left: 50%;
-	margin-left: -128px;
-    margin-top: -32px;
+    text-align: center;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     line-height: 0;
 }
 
@@ -38,7 +46,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 64px;
-    float: left;
+    float: center;
     font-family: 'Quicksand';
     font-weight: 500;
     font-size: 36px;
@@ -47,5 +55,6 @@ body {
 .message img {
     height: 100%;
     display: inline-block;
-    float: left;
+    float: center;
+    position: relative;
 }

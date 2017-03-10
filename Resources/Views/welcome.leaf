@@ -8,7 +8,12 @@
 }
 
 #export("body") {
-    <div class="message">
-        <h1>#(message)</h1>
+    <div class="logo">
+        <a href="/animation">
+        <img src="/images/dynamo_logo.png" alt="Dynamo logo" style="width:200px;height:200px;">
+        </a>
+        <div class="message">
+            <h1>#(message)</h1>
+        </div>
     </div>
 }

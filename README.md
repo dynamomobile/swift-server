@@ -1,6 +1,14 @@
-# Basic Template
+[![Languages](https://img.shields.io/badge/language-swift 3.0-FF69B4.svg)](#)
+[![Platforms](https://img.shields.io/badge/Platform-ubuntu-FF69B4.svg)](#)
+## About
 
-A basic vapor template for starting a new Vapor web application. If you're using vapor toolbox, you can use: `vapor new --template=basic`
+This repository shows how to create a Swift written server.
+
+## Installation
+
+Swift Package Manager:
+
+Add this repository as a dependency in the Package.swift manifest.
 
 ## 📖 Documentation
 
